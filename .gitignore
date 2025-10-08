@@ -211,3 +211,5 @@ __marimo__/
 .env.dev
 .env.test
 .vscode/
+
+large_models/
