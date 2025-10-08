@@ -14,10 +14,24 @@ dependencies = [
 [dependency-groups]
 dev = [
     "pre-commit>=4.3.0",
+    "pytest>=8.4.2",
+    "pytest-dotenv>=0.5.2",
     "python-dotenv>=1.1.1",
 ]
 
 
+[tool.uv]
+package = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["lab01_lib"]
+exclude = ["tests*"]
+
+
+[tool.pytest.ini_options]
+env_files = [".env.test"]
 
 [tool.ruff]
 line-length = 140
+
