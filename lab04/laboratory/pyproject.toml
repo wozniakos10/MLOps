@@ -1,0 +1,37 @@
+[project]
+name = "laboratory"
+version = "1.0.0"
+description = ""
+readme = "README.md"
+
+requires-python = ">=3.11"
+
+dependencies = [
+    "datasets>=3.5.0",
+    "google>=3.0.0",
+    "google-genai>=1.8.0",
+    "joblib>=1.4.2",
+    "jupyter>=1.1.1",
+    "langchain>=1.0.2",
+    "matplotlib>=3.10.1",
+    "notebook>=7.4.7",
+    "numpy>=2.2.4",
+    "pandas>=2.2.3",
+    "pgvector>=0.4.0",
+    "pillow>=11.1.0",
+    "psycopg>=3.2.12",
+    "pymilvus>=2.5.6",
+    "pymupdf>=1.16.14",
+    "requests>=2.32.3",
+    "sentence-transformers>=4.0.1",
+    "sqlalchemy>=2.0.40",
+    "torch>=2.6.0",
+    "tqdm>=4.67.1",
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.3.0",
+    "python-dotenv>=1.2.1",
+    "ruff>=0.14.2",
+]
