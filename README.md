@@ -10,3 +10,5 @@ This repository contains a set of exercises developed during course on AGH UST b
 ### Lab 02 - Databases & file formats - PostgreSQL, DuckDB, Parquet
 
 ### Lab 03 - Data processing - Polars
+
+### Lab 04 - Vector databases - pgvectorscale, SQLAlchemy, Milvus
