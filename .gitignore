@@ -217,7 +217,11 @@ large_models/
 *.DS_Store
 *.code-workspace
 
+# Ignore everything under data
 data/
 **/data/
+
+
+
 
 volumes/
