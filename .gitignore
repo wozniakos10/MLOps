@@ -225,3 +225,6 @@ data/
 
 
 volumes/
+
+**/mlflow-artifacts/
+**/mlflow.db
