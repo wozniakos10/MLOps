@@ -228,3 +228,6 @@ volumes/
 
 **/mlflow-artifacts/
 **/mlflow.db
+
+**/finetuned_model/
+**/mlruns/
