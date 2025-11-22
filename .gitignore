@@ -231,3 +231,5 @@ volumes/
 
 **/finetuned_model/
 **/mlruns/
+
+**/models/

@@ -1,0 +1,23 @@
+# I think for production when my application have more dependencies I would use uv based image.
+
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install minimal dependencies (without pytorch)
+RUN pip install --no-cache-dir \
+    onnxruntime\
+    transformers
+
+
+# Copy model files
+COPY models/onnx/model_optimized.onnx /app/models/onnx/model_optimized.onnx
+COPY models/onnx/model.onnx.data /app/models/onnx/model.onnx.data
+
+# Copy script
+COPY serve_onnx_model.py /app/serve_onnx_model.py
+
+# Set environment variable
+ENV MODEL_PATH=/app/models/onnx/model_optimized.onnx
+
+CMD ["python", "serve_onnx_model.py"]

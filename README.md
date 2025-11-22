@@ -12,3 +12,9 @@ This repository contains a set of exercises developed during course on AGH UST b
 ### Lab 03 - Data processing - Polars
 
 ### Lab 04 - Vector databases - pgvectorscale, SQLAlchemy, Milvus
+
+### lab 05 - Versioning - DVC, MLFlow
+
+### lab 06 - ML testing & data-centric AI - CleanLab, Giskard, Captum, SHAP
+
+### lab 07 - Model optimization for inference - PyTorch optimization, ONNX, ONNX Runtime

@@ -1,0 +1,19 @@
+# I think for production when my application have more dependencies I would use uv based image.
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install minimal dependencies (pytorch included)
+RUN pip install --no-cache-dir \
+    torch --extra-index-url https://download.pytorch.org/whl/cpu \
+    transformers
+
+
+# Copy model and script
+COPY models/pytorch/compiled_model.pth /app/models/pytorch/compiled_model.pth
+COPY serve_pytorch_model.py /app/serve_pytorch_model.py
+
+# Set environment variable
+ENV MODEL_PATH=/app/models/pytorch/compiled_model.pth
+
+CMD ["python", "serve_pytorch_model.py"]
