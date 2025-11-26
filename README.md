@@ -18,3 +18,5 @@ This repository contains a set of exercises developed during course on AGH UST b
 ### lab 06 - ML testing & data-centric AI - CleanLab, Giskard, Captum, SHAP
 
 ### lab 07 - Model optimization for inference - PyTorch optimization, ONNX, ONNX Runtime
+
+### lab 08 - Monitoring & drift detection - Evidently, NannyML
