@@ -20,3 +20,5 @@ This repository contains a set of exercises developed during course on AGH UST b
 ### lab 07 - Model optimization for inference - PyTorch optimization, ONNX, ONNX Runtime
 
 ### lab 08 - Monitoring & drift detection - Evidently, NannyML
+
+### lab 09 - Introduction to cloud computing - AWS services
