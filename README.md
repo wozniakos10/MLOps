@@ -22,3 +22,5 @@ This repository contains a set of exercises developed during course on AGH UST b
 ### lab 08 - Monitoring & drift detection - Evidently, NannyML
 
 ### lab 09 - Introduction to cloud computing - AWS services
+
+### lab 10 - Infrastructure as Code (IaC) - Terraform: https://github.com/wozniakos10/MLOps-lab10
