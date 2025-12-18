@@ -24,3 +24,5 @@ This repository contains a set of exercises developed during course on AGH UST b
 ### lab 09 - Introduction to cloud computing - AWS services
 
 ### lab 10 - Infrastructure as Code (IaC) - Terraform: https://github.com/wozniakos10/MLOps-lab10
+
+### lab 11 - Deployment & CI/CD - GitHub Actions: https://github.com/wozniakos10/MLOps-lab11
