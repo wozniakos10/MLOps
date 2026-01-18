@@ -233,3 +233,7 @@ volumes/
 **/mlruns/
 
 **/models/
+
+**/.uv_cache/
+
+**/logs/

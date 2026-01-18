@@ -1,0 +1,1 @@
+Screenshots from particular tasks are stored in [assets](./assets) folder.

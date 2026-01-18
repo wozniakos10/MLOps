@@ -26,3 +26,5 @@ This repository contains a set of exercises developed during course on AGH UST b
 ### lab 10 - Infrastructure as Code (IaC) - Terraform: https://github.com/wozniakos10/MLOps-lab10
 
 ### lab 11 - Deployment & CI/CD - GitHub Actions: https://github.com/wozniakos10/MLOps-lab11
+
+### lab 12 - ML pipelines - Apache Airflow
