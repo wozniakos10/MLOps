@@ -15,7 +15,7 @@ PREPROCESSED_DATA_PATH = "preprocessed_data"
     start_date=datetime(2025, 1, 1),
     end_date=datetime(2025, 1, 31),
     schedule="@monthly",
-    catchup=True,
+    catchup=False,
     tags=["homework", "lab12"],
 )
 def taxi_data_pipeline():
@@ -41,8 +41,8 @@ def taxi_data_pipeline():
             f.write(response.content)
 
         print(f"Uploaded to {path}")
-        # Return clean URI for downstream tasks using s3fs
-        return f"s3://{BUCKET_NAME}/{RAW_DATA_PATH}/{file_name}"
+
+        return path
 
     # Helper to get credentials for virtualenv tasks
     # can be done also in different way, without explicitly provide credentials
