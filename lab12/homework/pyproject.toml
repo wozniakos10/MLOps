@@ -1,0 +1,24 @@
+[project]
+name = "lab12_homework"
+version = "1.0.0"
+description = ""
+readme = "README.md"
+
+requires-python = "==3.11.*"
+
+dependencies = [
+    "apache-airflow[celery,postgres,standard,uv,s3fs]==3.1.5",
+    "twelvedata",
+    "apache-airflow-providers-amazon",
+]
+
+[dependency-groups]
+dev = [
+    "ruff"
+]
+
+airflow_common = [
+    "apache-airflow[celery,postgres,standard,uv,s3fs]==3.1.5",
+    "requests",
+    "apache-airflow-providers-amazon",
+]
