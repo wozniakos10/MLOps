@@ -237,3 +237,5 @@ volumes/
 **/.uv_cache/
 
 **/logs/
+
+**/vllm/

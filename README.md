@@ -28,3 +28,5 @@ This repository contains a set of exercises developed during course on AGH UST b
 ### lab 11 - Deployment & CI/CD - GitHub Actions: https://github.com/wozniakos10/MLOps-lab11
 
 ### lab 12 - ML pipelines - Apache Airflow
+
+### lab 13 - LLMOps - vLLM, Model Context Protocol (MCP), guardrails
