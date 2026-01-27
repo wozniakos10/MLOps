@@ -1,0 +1,34 @@
+services:
+  weather-mcp:
+    build:
+      context: .
+      args:
+        GUARDRAILS_API_KEY: ${GUARDRAILS_API_KEY}
+    command: uv run python weather_mcp.py
+    ports:
+      - "8001:8001"
+    env_file:
+      - .env
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8001/mcp" ]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+
+  chat:
+    build:
+      context: .
+      args:
+        GUARDRAILS_API_KEY: ${GUARDRAILS_API_KEY}
+    command: uv run python main.py
+    env_file:
+      - .env
+    environment:
+      - WEATHER_MCP_URL=http://weather-mcp:8001/mcp
+      - OTEL_SDK_DISABLED=true
+      - TQDM_DISABLE=1
+    depends_on:
+      - weather-mcp
+    stdin_open: true
+    tty: true
