@@ -1,4 +1,4 @@
-git commit --amend --no-edit ## Thoughts on vLLM setup on macOS
+## Thoughts on vLLM setup on macOS
 
 As I'm a macOS user and the provided pyproject.toml didn't work for me because of hardware setup, I followed the official vLLM guide to set it up: https://docs.vllm.ai/en/latest/getting_started/installation/cpu/#apple-silicon I cloned the repo and installed it by `uv pip install -r requirements/cpu.txt --index-strategy unsafe-best-match`. The problem is that currently there are no pre-compiled Python wheels or distributions for macOS users but only for Linux users (with GPU acceleration I believe). It's a common practice in the ML world as I believe Linux + GPU + CUDA is the most frequently used setup. I often find official paper repositories that have hardcoded `.cuda()` in every place and make it impossible to run outside the Linux + GPU + CUDA setup.
 

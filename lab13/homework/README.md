@@ -1,0 +1,1 @@
+Screenshots from particular tasks are stored in [assets](./assets) folder. As I mentioned in laboratory I couldn't use docker for serving vllm localy on my macos so I decided to use llm via API provider.

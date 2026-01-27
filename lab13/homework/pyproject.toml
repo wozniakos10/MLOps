@@ -1,0 +1,31 @@
+[project]
+name = "MLOps_course_AGH_lab_13_homework"
+version = "1.0.0"
+description = ""
+readme = "README.md"
+
+requires-python = "==3.12.*"
+
+dependencies = [
+    "fastmcp>=2.14.3",
+    "guardrails-ai>=0.7.2",
+    "httpx>=0.28.0",
+    "matplotlib>=3.10.8",
+    "mcp-use>=1.5.2",
+    "openai<2",  # Guardrails AI limitation
+    "polars>=1.37.1",
+    "pydantic-settings>=2.7.0",
+    "python-dotenv>=1.2.1",
+    "requests>=2.32.5",
+    "rich>=13.0.0,<14.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff"
+]
+
+[tool.uv]
+required-environments = [
+    "sys_platform == 'darwin' and platform_machine == 'arm64'"
+]
